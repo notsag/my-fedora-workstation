@@ -1,0 +1,9 @@
+ virtualenv
+ powerline-status
+ ansible
+ molecule
+ ansible-playbook-grapher
+ ansible-inventory-grapher
+ docker
+ docker-compose
+ awscli

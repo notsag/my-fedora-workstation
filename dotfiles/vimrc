@@ -1,0 +1,87 @@
+" Basic config
+set nocompatible
+filetype off
+syntax enable
+set number
+set ts=4
+set shiftwidth=4
+set autoindent
+set expandtab
+set cursorline
+set showmatch
+set paste
+
+" Use Vundle and plugins
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'godlygeek/tabular'
+Plugin 'pedrohdz/vim-yaml-folds'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'pearofducks/ansible-vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'lifepillar/vim-solarized8'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'peterhoeg/vim-qml'
+
+call vundle#end()
+
+" Plugin indent
+filetype plugin indent on
+
+" Exec NERDTree if opening a directory
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+
+" NERDTree shortcut and conf
+map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+" Use Ctrl + hjlk to move in splits
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Use Ctrl + oc to open/close
+nnoremap <C-a> zr
+nnoremap <C-x> zM
+nnoremap <C-o> za
+nnoremap <C-c> zc
+
+" Theme
+set background=dark
+colorscheme solarized8_high
+
+" Python shiftwidth, tabstop, softtabstop
+autocmd FileType python set sw=4
+autocmd FileType python set ts=4
+autocmd FileType python set sts=4
+let python_highlight_all = 1
+
+" python youcompleteme config
+let g:ycm_python_interpreter_path = ''
+let g:ycm_python_sys_path = []
+let g:ycm_extra_conf_vim_data = [
+  \  'g:ycm_python_interpreter_path',
+  \  'g:ycm_python_sys_path'
+  \]
+let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
+
+set nofoldenable
+
+" Python autocomplete conf
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
+
+set laststatus=2 " Always display the statusline in all windows
+set showtabline=2 " Always display the tabline, even if there is only one tab
+set noshowmode
+set t_Co=256
