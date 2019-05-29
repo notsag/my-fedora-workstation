@@ -45,6 +45,7 @@ echo "Install oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh| sed 's:env zsh -l::g' | sed 's:chsh -s .*$::g')" > /dev/null
 
 echo "Copy zshrc"
+chsh -s /bin/zsh
 cp dotfiles/zshrc ~/.zshrc > /dev/null
 
 echo "Install zsh plugins"

@@ -1,30 +1,170 @@
-[com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
-foreground-color='#A1B0B8'
-visible-name='Default'
-login-shell=false
-palette=['#252525', '#FF5252', '#C3D82C', '#FFC135', '#42A5F5', '#D81B60', '#00ACC1', '#F5F5F5', '#708284', '#FF5252', '#C3D82C', '#FFC135', '#42A5F5', '#D81B60', '#00ACC1', '#F5F5F5']
-badge-color='#AC7EA8'
-badge-color-set=false
-cursor-shape='ibeam'
-cursor-colors-set=false
-highlight-colors-set=false
-use-system-font=false
-bold-color-set=false
-font='Hack 12'
-use-theme-colors=false
-background-color='#263238'
-background-transparency-percent=0
-
 [com/gexperts/Tilix]
-quake-specific-monitor=0
 copy-on-select=true
+enable-wide-handle=false
+prompt-on-delete-profile=true
+quake-specific-monitor=0
 sidebar-on-right=false
 terminal-title-style='small'
 theme-variant='dark'
-enable-wide-handle=false
-prompt-on-delete-profile=true
 
 [com/gexperts/Tilix/keybindings]
+session-add-down='<Primary><Shift>o'
 session-add-right='<Primary><Shift>e'
 session-open='disabled'
-session-add-down='<Primary><Shift>o'
+
+[com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+background-color='#263238'
+background-transparency-percent=0
+badge-color='#AC7EA8'
+badge-color-set=false
+bold-color-set=false
+cursor-colors-set=false
+cursor-shape='ibeam'
+font='Hack 12'
+foreground-color='#A1B0B8'
+highlight-colors-set=false
+login-shell=false
+palette=['#252525', '#FF5252', '#C3D82C', '#FFC135', '#42A5F5', '#D81B60', '#00ACC1', '#F5F5F5', '#708284', '#FF5252', '#C3D82C', '#FFC135', '#42A5F5', '#D81B60', '#00ACC1', '#F5F5F5']
+use-system-font=false
+use-theme-colors=false
+visible-name='Default'
+
+[org/fedorahosted/background-logo-extension]
+logo-always-visible=true
+logo-border=uint32 0
+logo-file='/usr/share/fedora-logos/fedora_logo_darkbackground.svg'
+logo-position='bottom-center'
+logo-size=13.794788273615634
+
+[org/gnome/control-center]
+last-panel='background'
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['eog.desktop', 'gnome-abrt.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gucharmap.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.tweaks.desktop', 'seahorse.desktop', 'vinagre.desktop', 'yelp.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+picture-uri='file:///usr/share/backgrounds/f30/extras/i-see-stars.jpg'
+
+[org/gnome/desktop/input-sources]
+current=uint32 0
+sources=[('xkb', 'us+alt-intl')]
+xkb-options=@as []
+
+[org/gnome/desktop/interface]
+clock-show-weekday=true
+document-font-name='Hack NF 11'
+font-name='Hack NF 11'
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Adwaita-dark'
+monospace-font-name='Hack NF 10'
+show-battery-percentage=true
+toolkit-accessibility=false
+
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-nautilus', 'org-gnome-software', 'org-gnome-terminal', 'google-chrome', 'org-freedesktop-problems-applet', 'org-gnome-tweaks']
+
+[org/gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
+[org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
+application-id='org.freedesktop.problems.applet.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-tweaks]
+application-id='org.gnome.tweaks.desktop'
+
+[org/gnome/desktop/privacy]
+report-technical-problems=true
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=true
+
+[org/gnome/desktop/wm/preferences]
+action-middle-click-titlebar='none'
+button-layout='appmenu:minimize,close'
+titlebar-font='Hack NF 11'
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/gnome/login-screen]
+enable-fingerprint-authentication=true
+enable-password-authentication=true
+enable-smartcard-authentication=false
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+maximized=false
+
+[org/gnome/nm-applet/eap/8ef6a8a9-2f18-4d88-b9fc-5fac68ffa784]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/c5cbbf4e-9c7c-4450-b3ed-60beae2983af]
+ignore-ca-cert=true
+ignore-phase2-ca-cert=false
+
+[org/gnome/settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
+[org/gnome/settings-daemon/peripherals/mouse]
+locate-pointer=false
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-schedule-automatic=true
+
+[org/gnome/settings-daemon/plugins/xsettings]
+antialiasing='grayscale'
+hinting='slight'
+overrides={'Gtk/ShellShowsAppMenu': <1>}
+
+[org/gnome/shell]
+command-history=['gnome-terminal', 'google-chrome', 'tilix', 'tweak', 'tweaks']
+enabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'user-theme@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop']
+
+[org/gnome/shell/extensions/user-theme]
+name='Flat-Remix-Darkest-fullPanel'
+
+[org/gnome/software]
+check-timestamp=int64 1559141879
+
+[org/gnome/system/location]
+enabled=false
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+sidebar-width=189
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+window-position=(26, 23)
+window-size=(1203, 902)
