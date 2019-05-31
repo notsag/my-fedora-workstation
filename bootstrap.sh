@@ -71,6 +71,9 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim >
 
 echo "Install vim plugins"
 vim -E -s +PluginInstall +qall > /dev/null
+cd ~/.vim/bundle/YouCompleteMe
+python3 install.py --clang-completer
+cd ~/
 
 echo "Copy python autocompletion script"
 mkdir -p ~/.config > /dev/null
@@ -89,7 +92,7 @@ echo -e "###################\n"
 
 echo "Put user in docker group"
 groupadd docker
-usermod $(whoami) -G docker
+usermod -aG docker $(whoami)
 
 echo -e "\n###################"
 echo -e "##       S3      ##"

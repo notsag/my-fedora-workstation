@@ -10,6 +10,7 @@
  google-chrome-stable
  zsh
  gcc
+ gcc-c++
  manuskript
  rpm-build
  rpm-devel
@@ -32,3 +33,4 @@
  solar-backgrounds-common
  lpf-spotify-client
  awscli
+ cmake
