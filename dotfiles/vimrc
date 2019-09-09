@@ -28,6 +28,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'peterhoeg/vim-qml'
+Plugin 'psf/black'
 
 call vundle#end()
 
@@ -80,6 +81,10 @@ set nofoldenable
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
+
+"Black config
+let g:black_linelength=79
+autocmd BufWritePre *.py execute ':Black'
 
 set laststatus=2 " Always display the statusline in all windows
 set showtabline=2 " Always display the tabline, even if there is only one tab
